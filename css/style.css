@@ -1,56 +1,58 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    font-family: 'Poppins', sans-serif;
-    background-color: #f1f1f1;
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f1f1f1;
+  font-size: .9em;
 }
 
-.container
+a:link, a:visited{
+  color: #cc0000;
+}
+
+a:hover
 {
-  max-width: 1020px;
+  color: #ff0000;
+}
+
+.container {
+  max-width: 1200px;
   margin: auto;
 }
 
-header
-{
-  background-color: #fff;
+header {
+  background-color: #333;
+  color: #fff;
+}
+
+header .container {
   padding: 20px 0;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
   display: flex;
   justify-content: space-between;
 }
 
-header .logo
-{
+header .container .logo {
   font-size: 30px;
   font-weight: 600;
-  color: #333;
   text-decoration: none;
 }
 
-header .logo span
-{
-  color: #ff523b;
-}
-
-nav
-{
+nav {
   display: flex;
   align-items: center;
 }
 
-nav ul 
-{
+nav ul {
   display: flex;
   list-style-type: none;
 }
 
-nav .nav-link
-{
+nav .nav-link {
   color: #333;
   text-decoration: none;
   margin: 0 10px;
@@ -59,9 +61,38 @@ nav .nav-link
   padding: 8px 0;
   transition: all 0.3s ease;
 }
-
-.services
+#jumbotron
 {
-  display: flex;
+
+  background-color: #fff;
+  text-align: center;
+}
+#main
+{
+  background-color: #f4afaf;
+}
+#main .container {
+  padding: 20px;
+  line-height: calc(1em + 10px);
 }
 
+.services {
+  display: flex;
+  gap: 15px;
+  padding: 15px 0;
+}
+
+.service {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background-color: bisque; 
+
+}
+
+.why-us {
+  display: grid;
+  justify-content: space-evenly;
+}
